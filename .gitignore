@@ -1,0 +1,106 @@
+### Spring Boot ###
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+
+### Maven ###
+.mvn/
+mvnw
+mvnw.cmd
+
+### Logs ###
+*.log
+logs/
+spring.log
+
+### OS ###
+.DS_Store
+Thumbs.db
+
+### ==========================================
+### SENSITIVE CONFIGURATION FILES
+### ==========================================
+### ⚠️ NEVER COMMIT THESE FILES ⚠️
+### ==========================================
+
+# Environment-specific properties files
+application-local.properties
+application-dev.properties
+application-prod.properties
+application-staging.properties
+
+# Environment variables files
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+.env.staging
+**/.env
+
+# Backup files
+*.bak
+*.backup
+*.properties.bak
+
+# Security credentials
+secrets.properties
+credentials.properties
+
+### Keep only template files ###
+!application.properties
+!application.properties.example
+
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Docker
+docker-compose.override.yml
+```
+
+## 📁 Final Project Structure:
+```
+BookingEventTicket/
+├── .github/
+│   └── workflows/
+│       └── ci-cd.yml
+├── src/
+├── .dockerignore
+├── .env
+├── .gitignore
+├── docker-compose.yml
+├── Dockerfile
+└── pom.xml
